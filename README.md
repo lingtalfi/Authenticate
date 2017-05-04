@@ -202,6 +202,10 @@ Hopefully this was helpful.
 History Log
 ------------------
    
+- 1.1.0 -- 2017-05-04
+
+    - add Grantor.rootName to grant root all powers
+    
 - 1.0.0 -- 2017-04-10
 
     - initial commit

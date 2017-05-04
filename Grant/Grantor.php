@@ -16,6 +16,13 @@ class Grantor implements GrantorInterface
      */
     private $badgeStore;
     private $badges;
+    private $rootName;
+
+
+    public function __construct()
+    {
+        $this->rootName = 'root';
+    }
 
     public static function create()
     {
@@ -24,6 +31,9 @@ class Grantor implements GrantorInterface
 
     public function has($badge)
     {
+        if($this->rootName === $badge){
+            return true;
+        }
         if (null !== $this->badgeStore) {
 
             if (null !== ($profile = SessionUser::getValue("profile"))) {
@@ -51,6 +61,11 @@ class Grantor implements GrantorInterface
         return $this;
     }
 
+    public function setRootName($rootName)
+    {
+        $this->rootName = $rootName;
+        return $this;
+    }
 
     //--------------------------------------------
     //
