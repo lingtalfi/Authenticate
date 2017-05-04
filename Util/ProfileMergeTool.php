@@ -18,6 +18,4 @@ class ProfileMergeTool
         $input = array_merge_recursive($profile1, $profile2);
         return ArrayTool::arrayUniqueRecursive($input);
     }
-
-
 }

@@ -45,6 +45,20 @@ use Authenticate\BadgeStore\Exception\BadgeStoreException;
  * ];
  *
  *
+ * The "profiles" key is mandatory at the root level, and the "groups" keys are mandatory at every level.
+ * This is not a recursive structure, the notation looks like this:
+ *
+ * - store:
+ * ----- profiles:
+ * --------- (profile)
+ * ------------- groups: array of group names
+ * ------------- *: badge name
+ * ----- groups:
+ * --------- (group)
+ * ------------- groups: array of group names
+ * ------------- *: badge name
+ *
+ *
  *
  */
 class FileBadgeStore implements BadgeStoreInterface
