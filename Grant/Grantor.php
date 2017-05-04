@@ -52,6 +52,7 @@ class Grantor implements GrantorInterface
             return false;
         }
         $this->error("badgeStore not set");
+        return false;
     }
 
 
