@@ -202,6 +202,10 @@ Hopefully this was helpful.
 History Log
 ------------------
    
+- 1.3.0 -- 2017-05-05
+
+    - add UserStoreInterface.getUsers method
+    
 - 1.2.0 -- 2017-05-04
 
     - add ProfileMergeTool

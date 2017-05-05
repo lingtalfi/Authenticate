@@ -70,6 +70,12 @@ class FileUserStore implements UserStoreInterface
         return false;
     }
 
+
+    public function getUsers()
+    {
+        return $this->getStore();
+    }
+
     /**
      * $profile: the profile string
      * @return string, the user id
