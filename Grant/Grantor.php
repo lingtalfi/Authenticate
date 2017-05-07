@@ -30,12 +30,12 @@ class Grantor implements GrantorInterface
 
     public function has($badge)
     {
-        if($this->rootName === $badge){
-            return true;
-        }
         if (null !== $this->badgeStore) {
 
             if (null !== ($profile = SessionUser::getValue("profile"))) {
+                if ($this->rootName === $profile) {
+                    return true;
+                }
                 if (true === $this->badgeStore->hasBadge($badge, $profile)) {
                     $this->accessGranted($badge);
                     return true;
