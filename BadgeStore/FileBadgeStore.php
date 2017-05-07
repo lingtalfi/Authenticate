@@ -65,6 +65,13 @@ class FileBadgeStore implements BadgeStoreInterface
 {
 
     private $file;
+    private $profile2Badgges;
+
+
+    public function __construct()
+    {
+        $this->profile2Badgges = [];
+    }
 
     public static function create()
     {
@@ -92,6 +99,15 @@ class FileBadgeStore implements BadgeStoreInterface
         }
         return $ret;
     }
+
+    public function hasBadge($badge, $profile)
+    {
+        if (false === array_key_exists($profile, $this->profile2Badgges)) {
+            $this->profile2Badgges[$profile] = $this->getBadges($profile);
+        }
+        return in_array($badge, $this->profile2Badgges[$profile], true);
+    }
+
 
 
 

@@ -15,7 +15,6 @@ class Grantor implements GrantorInterface
      * @var BadgeStoreInterface
      */
     private $badgeStore;
-    private $badges;
     private $rootName;
 
 
@@ -37,17 +36,12 @@ class Grantor implements GrantorInterface
         if (null !== $this->badgeStore) {
 
             if (null !== ($profile = SessionUser::getValue("profile"))) {
-                if (null === $this->badges) {
-                    $this->badges = array_flip($this->badgeStore->getBadges($profile));
-                }
-                if (array_key_exists($badge, $this->badges)) {
+                if (true === $this->badgeStore->hasBadge($badge, $profile)) {
                     $this->accessGranted($badge);
                     return true;
                 }
                 $this->accessDenied($badge);
                 return false;
-            } else {
-                $this->badges = null;
             }
             return false;
         }
