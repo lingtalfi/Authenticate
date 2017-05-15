@@ -202,6 +202,10 @@ Hopefully this was helpful.
 History Log
 ------------------
    
+- 1.5.0 -- 2017-05-15
+
+    - SessionUser::$key is now public
+    
 - 1.4.1 -- 2017-05-07
 
     - fix Grantor.rootName to grant root all powers

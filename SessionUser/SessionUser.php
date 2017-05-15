@@ -16,7 +16,7 @@ namespace Authenticate\SessionUser;
 class SessionUser
 {
 
-    private static $key = "SessionUser";
+    public static $key = "SessionUser";
 
     /**
      * Connects the current user
