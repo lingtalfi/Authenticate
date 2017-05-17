@@ -2,6 +2,9 @@
 
 namespace Authenticate\SessionUser;
 
+
+use Bat\SessionTool;
+
 /**
  * This class assumes that there is maximum only one connected user to handle at a time,
  * hence the static methods.
@@ -74,7 +77,11 @@ class SessionUser
     {
         self::startSession();
         // http://php.net/manual/en/function.session-destroy.php
-        $_SESSION[self::$key] = [];
+
+
+
+        SessionTool::destroyPartial(self::$key);
+
 
 
         /**
