@@ -111,6 +111,11 @@ class SessionUser
         return $default;
     }
 
+    public static function setValues(array $values)
+    {
+        return $_SESSION[self::$key] = $values;
+    }
+
     public static function getAll()
     {
         self::startSession();
