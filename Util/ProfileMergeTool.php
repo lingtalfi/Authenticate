@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Authenticate\Util;
+namespace Ling\Authenticate\Util;
 
 
-use Bat\ArrayTool;
+use Ling\Bat\ArrayTool;
 
 class ProfileMergeTool
 {

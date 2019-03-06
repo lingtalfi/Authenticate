@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Authenticate\Util;
+namespace Ling\Authenticate\Util;
 
 
-use Authenticate\User\UserInterface;
+use Ling\Authenticate\User\UserInterface;
 
 class UserToSessionConvertor
 {

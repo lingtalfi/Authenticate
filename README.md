@@ -14,7 +14,7 @@ Install
 ==========
 Using the [uni](https://github.com/lingtalfi/universe-naive-importer) command.
 ```bash
-uni import Authenticate
+uni import Ling/Authenticate
 ```
 
 Or just download it and place it where you want otherwise.
@@ -73,11 +73,11 @@ The demo code contains the following:
 <?php
 
 
-use Authenticate\BadgeStore\FileBadgeStore;
-use Authenticate\Grant\Grantor;
-use Authenticate\SessionUser\SessionUser;
-use Authenticate\UserStore\FileUserStore;
-use Authenticate\Util\UserToSessionConvertor;
+use Ling\Authenticate\BadgeStore\FileBadgeStore;
+use Ling\Authenticate\Grant\Grantor;
+use Ling\Authenticate\SessionUser\SessionUser;
+use Ling\Authenticate\UserStore\FileUserStore;
+use Ling\Authenticate\Util\UserToSessionConvertor;
 
 require_once __DIR__ . "/../boot.php";
 require_once __DIR__ . "/../init.php";

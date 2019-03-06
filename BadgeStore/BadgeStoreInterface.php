@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Authenticate\BadgeStore;
+namespace Ling\Authenticate\BadgeStore;
 
 
 interface BadgeStoreInterface

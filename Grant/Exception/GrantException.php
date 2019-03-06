@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Authenticate\Grant\Exception;
+namespace Ling\Authenticate\Grant\Exception;
 
 
 class GrantException extends \Exception

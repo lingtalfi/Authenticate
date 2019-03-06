@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Authenticate\User;
+namespace Ling\Authenticate\User;
 
 
 /**

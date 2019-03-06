@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Authenticate\BadgeStore\Exception;
+namespace Ling\Authenticate\BadgeStore\Exception;
 
 class BadgeStoreException extends \Exception
 {

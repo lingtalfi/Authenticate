@@ -1,9 +1,9 @@
 <?php
 
 
-namespace Authenticate\BadgeStore;
+namespace Ling\Authenticate\BadgeStore;
 
-use Authenticate\BadgeStore\Exception\BadgeStoreException;
+use Ling\Authenticate\BadgeStore\Exception\BadgeStoreException;
 
 /**
  * This badge store stores the badges in a file.

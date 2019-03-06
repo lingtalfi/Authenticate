@@ -1,12 +1,12 @@
 <?php
 
 
-namespace Authenticate\Grant;
+namespace Ling\Authenticate\Grant;
 
 
-use Authenticate\BadgeStore\BadgeStoreInterface;
-use Authenticate\Grant\Exception\GrantException;
-use Authenticate\SessionUser\SessionUser;
+use Ling\Authenticate\BadgeStore\BadgeStoreInterface;
+use Ling\Authenticate\Grant\Exception\GrantException;
+use Ling\Authenticate\SessionUser\SessionUser;
 
 class Grantor implements GrantorInterface
 {

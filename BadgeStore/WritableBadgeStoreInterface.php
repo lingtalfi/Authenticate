@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Authenticate\BadgeStore;
+namespace Ling\Authenticate\BadgeStore;
 
 /**
  * This is an experimental API and hasn't been tested yet.

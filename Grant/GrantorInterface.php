@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Authenticate\Grant;
+namespace Ling\Authenticate\Grant;
 
 
 interface GrantorInterface

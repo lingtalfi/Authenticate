@@ -1,9 +1,9 @@
 <?php
 
-namespace Authenticate\SessionUser;
+namespace Ling\Authenticate\SessionUser;
 
 
-use Bat\SessionTool;
+use Ling\Bat\SessionTool;
 
 /**
  * This class assumes that there is maximum only one connected user to handle at a time,

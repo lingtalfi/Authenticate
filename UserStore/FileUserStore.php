@@ -1,13 +1,13 @@
 <?php
 
 
-namespace Authenticate\UserStore;
+namespace Ling\Authenticate\UserStore;
 
 
-use ArrayToString\ArrayToStringTool;
-use Authenticate\User\User;
-use Authenticate\User\UserInterface;
-use Bat\FileSystemTool;
+use Ling\ArrayToString\ArrayToStringTool;
+use Ling\Authenticate\User\User;
+use Ling\Authenticate\User\UserInterface;
+use Ling\Bat\FileSystemTool;
 
 /**
  * This class stores the user in a file.

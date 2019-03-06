@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Authenticate\UserStore;
+namespace Ling\Authenticate\UserStore;
 
 
-use Authenticate\User\UserInterface;
+use Ling\Authenticate\User\UserInterface;
 
 interface UserStoreInterface
 {
