@@ -201,7 +201,11 @@ Hopefully this was helpful.
 
 History Log
 ------------------
-   
+
+- 1.7.2 -- 2020-12-04
+
+    - Add lpi-deps.byml file
+
 - 1.7.1 -- 2018-05-09
 
     - fix SessionUser::setValues destroying the session inadvertently
